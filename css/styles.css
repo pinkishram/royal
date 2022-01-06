@@ -1865,6 +1865,8 @@ footer .logoo {
 
   .befor-after {
     margin-top: 35rem;
+    padding: 0;
+
   }
 
 
@@ -1898,7 +1900,7 @@ footer .logoo {
     width: 400px;
     height: 400px;
     margin-top: 2rem;
-        margin-left: 2rem;
+    margin-left: 2rem;
 
   }
 
