@@ -1830,7 +1830,7 @@ font-family: 'Rajdhani', sans-serif;
 @media (max-width:410px) {
 
   body{
-      overflow: hidden;
+      overflow-x: hidden;
   }
   
    #header{
