@@ -1748,7 +1748,7 @@ footer .logoo {
 
   #header {
     
-        width: 415px;
+        width: 450px;
 
     height: 170vh;
   }
@@ -1764,7 +1764,7 @@ footer .logoo {
   }
 
   .top-head {
-    width: 100vw;
+    width: 450px;
     height: 150vh;
   }
 
@@ -1885,7 +1885,7 @@ footer .logoo {
   
   .company{
     padding:6.5% 0;
-    
+  }
 
   .testmonial-tittle h3 {
     font-size: 3.2rem;
