@@ -1829,6 +1829,10 @@ font-family: 'Rajdhani', sans-serif;
 /* mobile media */
 @media (max-width:410px) {
 
+  body{
+      overflow: hidden;
+  }
+  
    #header{
     height: 150vh;
   }
