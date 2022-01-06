@@ -1829,8 +1829,8 @@ font-family: 'Rajdhani', sans-serif;
 /* mobile media */
 @media (max-width:410px) {
 
-  #header{
-    height: 200vh;
+   #header{
+    height: 100vh;
   }
 
   .contact-sec{
@@ -1845,8 +1845,8 @@ font-family: 'Rajdhani', sans-serif;
 
 
   .top-head {
-    width: 150%;
-    height: 200vh;
+    width: 100vw;
+    height: 100vh;
   }
 
   .logo {
