@@ -2056,8 +2056,12 @@ max-height: 450px;
 }
 
 .contact-alt{
+  display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
+  gap:2rem;
   margin: 0;
+
 }
 
 
