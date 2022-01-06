@@ -1830,7 +1830,7 @@ font-family: 'Rajdhani', sans-serif;
 @media (max-width:410px) {
 
    #header{
-    height: 100vh;
+    height: 150vh;
   }
 
   .contact-sec{
