@@ -3,6 +3,9 @@
   --secondary-clr: #EE9A00;
   --light-dark-clr: #7d7d7d;
   --heavy-secondary-clr: #D6A419;
+  --div-width:415px;
+  --div-padding-left:1rem;
+
 }
 
 body {
@@ -1424,6 +1427,8 @@ footer .logoo {
     border-radius: 5px;
     margin: 0 1.2rem;
   }
+
+  
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1715,8 +1720,9 @@ footer .logoo {
 }
 
 /* mobile media */
+
 @media (max-width:410px) {
-  
+
   body{
     overflow-x:hidden;
   }
@@ -1741,14 +1747,18 @@ footer .logoo {
     margin: 0 auto;
   }
 
+  footer{
+    width:var(--div-width);
+  }
+
   a:hover, a.ctive {
     background: none;
     color: gold;
   }
 
   #header {
-    
-        width: 450px;
+
+        width: var(--div-width);
 
     height: 170vh;
   }
@@ -1764,7 +1774,8 @@ footer .logoo {
   }
 
   .top-head {
-    width: 450px;
+    width: var(--div-width);
+
     height: 150vh;
   }
 
@@ -1819,6 +1830,10 @@ footer .logoo {
     width: 300px;
   }
 
+  .promo{
+    width:var(--div-width);
+  }
+
   .promp-pic {
     height: 350px;
     width: 350px;
@@ -1844,7 +1859,7 @@ footer .logoo {
   }
 
   .contact-first {
-    width: 400px;
+    width:var(--div-width);
     position: static;
   }
 
@@ -1857,6 +1872,7 @@ footer .logoo {
   }
 
   .reviews {
+    width: 350px;
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
@@ -1866,12 +1882,14 @@ footer .logoo {
   .befor-after {
     margin-top: 35rem;
     padding: 0;
+    width: var(--div-width);
 
   }
 
 
   .contact-tow {
     margin-top: 0;
+    width: var(--div-width);
   }
 
   .contact-img {
@@ -1882,10 +1900,11 @@ footer .logoo {
     min-height: 400px;
     max-width: 370px;
   }
-  
+
   .company{
-    padding:6.5% 0;
-  }
+    padding:6.5% 0 6.5% 1rem;
+    width:var(--div-width);
+}
 
   .testmonial-tittle h3 {
     font-size: 3.2rem;
@@ -1894,7 +1913,41 @@ footer .logoo {
   .card {
     width: 300px;
   }
+  .head-intro{
+    margin-top: 40px;
+    padding: 0;
+    margin-right: 40px;
 
+  }
+
+  .royal-logo{
+    width:380px;
+  }
+
+  .qoute-design{
+     left:0;
+  }
+
+  .story-section{
+    width:95%;
+  }
+
+  .view-work{
+    justify-content: flex-start;
+  }
+
+.view-wrap{
+  width:var(--div-width);
+}
+
+.detail-tow {
+  padding-left: 25px;
+}
+
+.view-tittle{
+  font-family: "montserrat";
+  padding-left: 1rem;
+}
   .location {
     position: static;
     width: 400px;
@@ -1918,7 +1971,7 @@ footer .logoo {
     padding-left: 1rem;
   }
 
-  .row-contact {
+  .row-contact{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1936,7 +1989,7 @@ footer .logoo {
   }
 
   /* lastsection */
-  
+
   .info {
     display: flex;
     flex-direction: column;
@@ -1979,4 +2032,5 @@ footer .logoo {
   .view {
     max-width: 330px;
   }
+
 }
