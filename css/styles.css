@@ -1716,6 +1716,10 @@ footer .logoo {
 
 /* mobile media */
 @media (max-width:410px) {
+  
+  body{
+    overflow-x:hidden;
+  }
 
   nav ul {
     position: absolute;
@@ -1921,6 +1925,7 @@ footer .logoo {
   }
 
   /* lastsection */
+  
   .info {
     display: flex;
     flex-direction: column;
