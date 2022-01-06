@@ -41,7 +41,7 @@
 
 
 let currentScrollPosition = 0;
-let scrollAmount = 450;
+let scrollAmount = 320;
 
 
 const stest = document.querySelector(".testmonial-sub");
@@ -70,7 +70,7 @@ stest.style.transform="translatex("+ currentScrollPosition + "px)";
  // second box //
 
      let currentScrollPositionn = 0;
-     let scrollAmountt = 470;
+     let scrollAmountt = 400;
 
 const sCont = document.querySelector(".view-cards");
 const hScroll = document.querySelector(".scrol-wrap");
