@@ -1871,7 +1871,7 @@ footer .logoo {
 
   .befor-after-img {
     min-height: 400px;
-    min-width: 400px;
+    max-width: 370px;
   }
 
   .testmonial-tittle h3 {
