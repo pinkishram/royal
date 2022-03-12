@@ -1899,7 +1899,9 @@ footer .logoo {
     width: var(--div-width);
 
   }
-
+   .befor-after-img {
+  width: 100%;
+  }
 
   .contact-tow {
     margin-top: 0;
