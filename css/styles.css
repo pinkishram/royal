@@ -1811,13 +1811,14 @@ footer .logoo {
     width:var(--div-width);
     padding: 0;
   }
+  
    .intro p{
-    max-width: 95%;
+    max-width: 91%;
     
   }
 
   .intro-item {
-    width: 385px;
+    width: var(--div-width);
   }
 
   .servic {
