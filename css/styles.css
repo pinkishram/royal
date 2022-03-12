@@ -1721,7 +1721,7 @@ footer .logoo {
 
 /* mobile media */
 
-@media (max-width:420px) {
+@media (max-width:430px) {
 
   body{
     overflow-x:hidden;
