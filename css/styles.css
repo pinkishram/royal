@@ -1738,12 +1738,13 @@ footer .logoo {
   nav ul {
     position: absolute;
     width: 100%;
-    height: 150vh;
+    height: 130vh;
     text-align: center;
-    top: 80px;
+    top: 90px;
     left: -200%;
     text-align: center;
     transition: all .5s;
+    margin-left:7px;
   }
 
   nav ul li {
