@@ -1904,6 +1904,7 @@ footer .logoo {
   .contact-tow {
     margin-top: 0;
     width: var(--div-width);
+    padding:0;
   }
 
   .contact-img {
@@ -1912,7 +1913,7 @@ footer .logoo {
 
   .befor-after-img {
     min-height: 400px;
-    max-width: 370px;
+    min-width:100%;
   }
 
   .company{
@@ -1985,11 +1986,6 @@ footer .logoo {
     display: block;
     padding: 0;
   }
-  
-  .contact-box form{
-    padding-left:16px;
-  }
-
   .row-contact{
     display: flex;
     flex-direction: column;
