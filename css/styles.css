@@ -373,7 +373,7 @@ a.ctive {
 
 .intro-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   column-gap: 5px;
 }
 
@@ -1056,7 +1056,7 @@ textarea:not(:focus):valid~.label {
 
 .story-one-p {
   font-size: 2rem;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
   color: rgba(25, 37, 56, .9);
   text-transform: capitalize;
@@ -1110,7 +1110,7 @@ textarea:not(:focus):valid~.label {
 }
 
 .view-tittle {
-  font-size: 3.2rem;
+  font-size:3.2rem;
   font-weight: lighter;
   font-family: arial;
   color: var(--primary-clr);
@@ -1814,6 +1814,7 @@ footer .logoo {
   
    .intro p{
     max-width: 91%;
+     margin:0 auto;
     
   }
 
@@ -1860,7 +1861,11 @@ footer .logoo {
     width: 200px;
     height: 60px;
   }
-
+  
+  .promo-tow {
+    display: block;
+  }
+  
   .line {
     top: 0;
     width: 2rem;
@@ -1875,6 +1880,10 @@ footer .logoo {
   .contact-first {
     width:var(--div-width);
     position: static;
+  }
+  
+  .contact-first form{
+    padding-left:16px;
   }
 
   .neo-button-box {
@@ -1919,7 +1928,7 @@ footer .logoo {
   }
 
   .company{
-    padding:6.5% 0 6.5% 1rem;
+    padding:6.5% 0 6.5% 0;
     width:var(--div-width);
 }
 
@@ -1930,6 +1939,7 @@ footer .logoo {
   .card {
     width: 300px;
   }
+  
   .head-intro{
     margin-top: 40px;
     padding: 0;
@@ -1946,7 +1956,7 @@ footer .logoo {
   }
 
   .story-section{
-    width:95%;
+    width:100%;
   }
 
   .view-work{
@@ -1964,6 +1974,8 @@ footer .logoo {
 .view-tittle{
   font-family: "montserrat";
   padding-left: 1rem;
+  font-size:2rem;
+  line-height: 4rem;
 }
   
   .location {
