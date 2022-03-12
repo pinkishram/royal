@@ -1726,6 +1726,8 @@ footer .logoo {
   body{
     overflow-x:hidden;
     max-width:var(--div-width);
+    margin:0;
+    pdding:0;
   }
 
   nav ul {
