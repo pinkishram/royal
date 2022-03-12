@@ -3,7 +3,7 @@
   --secondary-clr: #EE9A00;
   --light-dark-clr: #7d7d7d;
   --heavy-secondary-clr: #D6A419;
-  --div-width:415px;
+  --div-width:420px;
   --div-padding-left:1rem;
 
 }
@@ -1721,10 +1721,11 @@ footer .logoo {
 
 /* mobile media */
 
-@media (max-width:410px) {
+@media (max-width:420px) {
 
   body{
     overflow-x:hidden;
+    max-width:var(--div-width);
   }
 
   nav ul {
