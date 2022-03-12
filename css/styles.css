@@ -1962,6 +1962,7 @@ footer .logoo {
   font-family: "montserrat";
   padding-left: 1rem;
 }
+  
   .location {
     position: static;
     width: 400px;
@@ -1982,7 +1983,11 @@ footer .logoo {
     height: auto;
     background-color: #fff;
     display: block;
-    padding-left: 1rem;
+    padding: 0;
+  }
+  
+  .contact-box form{
+    padding-left:16px;
   }
 
   .row-contact{
