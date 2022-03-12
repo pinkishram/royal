@@ -1725,7 +1725,7 @@ footer .logoo {
 
 /* mobile media */
 
-@media (max-width:430px) {
+@media (max-width:420px) {
 
   body{
     overflow-x:hidden;
@@ -1803,7 +1803,7 @@ footer .logoo {
   }
 
   .itema, .itemb, .itemc {
-    padding: 0 25px;
+    padding: 0;
   }
 
   .intro {
