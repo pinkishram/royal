@@ -1732,7 +1732,7 @@ footer .logoo {
     max-width:var(--div-width);
     margin:0;
     pdding:0;
-     overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   nav ul {
@@ -1807,8 +1807,12 @@ footer .logoo {
   }
 
   .intro {
-    width: 400px;
+    width:var(--div-width);
     padding: 0;
+  }
+   .intro p{
+    max-width: 95%;
+    
   }
 
   .intro-item {
