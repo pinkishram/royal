@@ -94,7 +94,7 @@ a.ctive {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: #FF9A00;
+    background: #83d3cf;
     transform: scaleX(0);
     transform-origin: left;
     transition: 500ms ease-out;
@@ -136,7 +136,7 @@ a.ctive {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: #FF9A00;
+    background: #83d3cf;
     transform: scaleX(0);
     transform-origin: right center;
     transition: 500ms ease-in;
@@ -177,22 +177,26 @@ a.ctive {
     margin: 3.5rem 0 2rem;
     font-family: 'Noto Sans JP', sans-serif;
     text-transform: capitalize;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #DCDCDC;
-    font-size: clamp(1rem, 1rem, .5rem);
+    font-size: clamp(1.4rem, 1rem, .5rem);
     padding: 10px 200px 0 16px;
 }
 
 .main-pitem {
+    max-width: 87%;
     font-weight: lighter;
-    font-family: 'Noto Sans JP', sans-serif;
-    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
     letter-spacing: 3px;
     color: #DCDCDC;
-    font-size: clamp(1rem, 1rem, 5rem);
+    font-size: clamp(1.4rem, 1.4rem, 5rem);
     padding: 0 50px 0 16px;
 }
-
+.text-style{
+    color: #83d3cf;
+    font-weight: 400;
+}
  .btn-main,
 .contact {
     margin: 30px 55px 30px 0;
@@ -214,7 +218,7 @@ a.ctive {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: #FF9A00;
+    background: #83d3cf;
     transform: scaleX(0);
     transform-origin: right;
     transition: 500ms ease-in;
@@ -1435,7 +1439,7 @@ footer .logoo {
 
     nav ul li a {
         color: white;
-        font-size: 17px;
+        font-size: 18px;
         text-transform: uppercase;
         border-radius: 5px;
         margin: 0 1.2rem;
@@ -1451,7 +1455,7 @@ footer .logoo {
 
     nav ul li a {
         color: white;
-        font-size: 16px;
+        font-size: 18px;
         text-transform: uppercase;
         border-radius: 5px;
         margin: 0 1.1rem;
@@ -1460,15 +1464,16 @@ footer .logoo {
     .tele {
         margin-left: 150px;
         border-width: 0;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
 @media only screen and (max-width: 1246px) {
+    
     .tele {
         margin-left: 120px;
         border-width: 0;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     nav ul li {
@@ -1478,7 +1483,7 @@ footer .logoo {
 
     nav ul li a {
         color: white;
-        font-size: 14px;
+        font-size: 18px;
         text-transform: uppercase;
         border-radius: 5px;
         margin: 0 1rem;
@@ -1514,16 +1519,36 @@ footer .logoo {
         height: 1000px;
     }
 
-    .tele {
-       
-        margin: auto;
-        border-bottom-width: 0;
+    .main-tittle {
+        box-sizing: border-box;
+        width: 70%;
+        margin: 9rem 0 0 100px;
+    }
+
+    .main-p {
+        font-family: 'Noto Sans JP', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #DCDCDC;
+        font-size: clamp(2rem, 1rem, 3rem);
+        padding: 10px 50px 0 16px;
+    }
+
+    .main-pitem {
+        font-family: 'Noto Sans JP', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #DCDCDC;
+        font-size: clamp(1.5rem, 1rem, 3rem);
+        padding: 0 50px 0 16px;
     }
 
     .tele {
+        margin: auto;
+        border-bottom-width: 0;
         margin-left: 80px;
         border-width: 0;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .accessorios,
@@ -1539,7 +1564,7 @@ footer .logoo {
 
     nav ul li a {
         color: white;
-        font-size: 15px;
+        font-size: 18px;
         text-transform: uppercase;
         border-radius: 5px;
         margin: 0 0.6rem;
@@ -1559,51 +1584,74 @@ footer .logoo {
 
 @media only screen and (max-width: 980px) {
 
+    nav ul {
+        position: absolute;
+        background-color: #232b3e;
+        width: 100%;
+        height: 900px;
+        top: 65px;
+        left: -110%;
+        text-align: center;
+        transition: all 0.8s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    .ul-btn{
+        width: 20%;
+        margin: 0 auto;
+    }
+    .tele{
+        margin: 0;
+    }
+
     .top-head {
         width: 100%;
         height: 1000px;
     }
 
-    .tele {
-        margin-left: 0px;
-        border-width: 0;
-        font-size: 1rem;
+    #checkbtn {
+        display: block;
     }
 
-    nav ul li {
-        display: inline-block;
-        margin: 1.5rem 0 0.3rem;
+    .logo {
+        margin-left: 25px;
+        font-size: 50px;
     }
 
-    nav ul li a {
-        color: white;
-        font-size: 12px;
-        text-transform: uppercase;
-        border-radius: 5px;
-        margin: 0 0.4rem;
+    #check:checked~ul {
+        left: 0;
     }
+
 
     .main-tittle {
         box-sizing: border-box;
-        width: 50%;
+        width: 90%;
         margin: 9rem 0 0 100px;
     }
 
     .main-p {
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family:Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #DCDCDC;
-        font-size: clamp(1rem, 1rem, 3rem);
+        font-size: clamp(2rem, 1rem, 3rem);
         padding: 10px 50px 0 16px;
     }
 
     .main-pitem {
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #DCDCDC;
-        font-size: clamp(1rem, 1rem, 3rem);
+        font-size: clamp(1.5rem, 1rem, 3rem);
         padding: 0 50px 0 16px;
     }
 
@@ -1639,42 +1687,10 @@ footer .logoo {
 
 /* toggler */
 
-@media only screen and (max-width: 725px) {
-
-    nav ul {
-        position: absolute;
-        background-color: #232b3e;
-        width: 100%;
-        height: 150vh;
-        top: 65px;
-        left: -110%;
-        text-align: center;
-        transition: all 0.8s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    .top-head {
-        width: 100%;
-        height: 1600px;
-    }
-
-    #checkbtn {
-        display: block;
-    }
-
-    .logo {
-        margin-left: 25px;
-        font-size: 50px;
-    }
+@media only screen and (max-width: 685px) {
+     .top-head{
+        height: 1200px;
+     }
 
     .accessorios,
     .cabinets,
@@ -1747,7 +1763,7 @@ footer .logoo {
     nav ul {
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         text-align: center;
         top: 90px;
         left: -200%;
@@ -1772,14 +1788,11 @@ footer .logoo {
     a.ctive,
     a:hover {
         background: none;
-        color: gold;
+        color: #fff;
     }
 
     #header {
-
         width: var(--div-width);
-
-        height: 170vh;
     }
 
     .contact-sec {
@@ -1794,7 +1807,7 @@ footer .logoo {
 
     .top-head {
         width: var(--div-width);
-        height: 150vh;
+        height: fit-content;
     }
 
     .logo {
@@ -1809,7 +1822,10 @@ footer .logoo {
         z-index: 4;
         left: 300px;
         top: 20px;
-        color: var(--secondary-clr);
+        color: #DCDCDC;
+    }
+    #checkbtn:hover{
+        color: #83d3cf;
     }
 
     .main-tittle {
@@ -1823,16 +1839,12 @@ footer .logoo {
     .headtittle {
         font-weight: bolder;
         text-transform: uppercase;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         color: #DCDCDC;
         font-size: 30px;
         width: 100%;
 
     }
-     .main-p{
-        color: var(--secondary-clr);
-
-     }
     .main-pitem {
 
         font-family:Arial, Helvetica, sans-serif;
