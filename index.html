@@ -25,12 +25,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Rajdhani:wght@300&display=swap"
         rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/72e29fb139.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <main class="main">
+    <a href="#header"><div class="scroll-top"><i class="fa-solid fa-angle-up"></i></div></a>
 
     <!-- the header -->
-
     <div id="header">
 
         <div class="top-head">
@@ -42,33 +46,43 @@
                 </label>
 
                 <h2 class="logo">
-                    royal
+                    logo
                 </h2>
 
                 <ul>
 
+                    <li style="position: relative;" onmouseenter="mouseOverActive()" onmouseleave="mouseOutActive()">
+
+                        <a class="activee2 nav-link"  href="#view-cards">cabinets</a>
+                        <a class="nav-link s-hide"  href="#view-cards">services</a>
+
+                        <div class="service-box" data-numbers="1">
+                            <a class="service-box-link" href="#view-cards">cabinets</a>
+                            <a class="service-box-link" href="#">countertop</a>
+                            <a class="service-box-link" href="#">link 3 </a>
+                        </div>
+                                              
+                    </li>
+                    
                     <li>
-                        <a class="activee" href="#view-cards">cabinets</a>
+                        <a class="counter nav-link"  href="#view-cards">countertop</a>
+                        <a class="nav-link faqhid activee" href="#c-detail">assurance</a>
+                    </li>
+
+                     <li>
+                        <a class="nav-link activee" href="#company">about us</a>
+                    </li> 
+
+                    <li>
+                        <a class="nav-link activee" href="#contact-boxx">contact us</a>
                     </li>
 
                     <li>
-                        <a href="#">countertop</a>
-                    </li>
-
-                    <li>
-                        <a href="#company">about us</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact-boxx">contact us</a>
-                    </li>
-
-                    <li>
-                        <a class="tele" href="tel:01221900315">01221900315</a>
+                        <a class="tele nav-link activee" href="tel:01221900315">+45 55285258</a>
                     </li>
 
                     <li class="quote">
-                        <a class="neo-button ul-btn" href="#contact-boxx" style="--crl:#83d3cf;--i:0,">
+                        <a class="neo-button ul-btn nav-link" href="#contact-boxx" style="--crl:#83d3cf;--i:0,">
                             <span class="neo-s">
                                 get free quote</span>
                         </a>
@@ -80,7 +94,7 @@
 
             <!-- section 2 -->
 
-            <div class="main-tittle">
+            <div class="main-tittle hide">
 
                 <h1 class="headtittle">
                     ready to have
@@ -209,7 +223,7 @@
         <h2 class="model-line">kitchen remodel services</h2>
     </div>
 
-    <div class="servic-container">
+    <div class="servic-container" id="servic-container">
 
         <div class="servic">
 
@@ -253,7 +267,7 @@
 
         <div id="contact-boxx" class="contact-first">
 
-            <div class="contact-adress">
+            <div class="contact-adress-one">
 
                 <h3>get a free quote
                 </h3>
@@ -334,7 +348,7 @@
 
     </div>
 
-    <div class="testmonial">
+    <div class="testmonial" id="testmonial">
         <div class="testmonial-tittle">
             <h3 class="social-name-fbb">testimonials</h3>
             <p class="social-name-fbbb">see what people have to say</p>
@@ -360,9 +374,9 @@
                 <div class="mini-card">
 
                     <h2 class="social-name">AA</h2>
-                    <h3 class="social-name-fb">abdallah ahmed</h3>
+                    <h3 class="social-name-fb">aa customer </h3>
                     <img class="social-stars" src="images\image.png" alt="">
-                    <a class="fb-icon" href="https://www.facebook.com/elborof.abdo"><img
+                    <a class="fb-icon" href="https://www.facebook.com"><img
                         class="fb-icon"
                         src="images\fb+logo+social+social+media+social+network+icon-1320191784115198611 (1).png"
                         alt=""></a>
@@ -377,11 +391,8 @@
 
             <div class="card">
                 <div class="mini-card">
-                    <img
-                        class="social-name-img"
-                        src="images\71466867_1323914031113402_7171230379288821760_n (1).jpg"
-                        alt="">
-                    <h3 class="social-name-fb">ahmed abdelsalam</h3>
+                    <h2 class="social-name s-n-t">aa</h2>
+                    <h3 class="social-name-fb">aa customer</h3>
                     <img class="social-stars" src="images\image.png" alt="">
                     <a
                         class="fb-icon"
@@ -393,8 +404,8 @@
                 </div>
 
                 <p class="test-p">you wil not find a higher commitment to
-                    quailty,standards,integrity and community culture than mohamed abdelsalam and
-                    the staff at roual plus,i`ve know and worked with this establishment...</p>
+                    quailty,standards,integrity and community culture than abdelsalam and
+                    the staff at roual plus.</p>
 
             </div>
 
@@ -402,9 +413,9 @@
                 <div class="mini-card">
 
                     <h2 class="social-name s-n-t">ju</h2>
-                    <h3 class="social-name-fb">judith</h3>
+                    <h3 class="social-name-fb">ju customer</h3>
                     <img class="social-stars" src="images\image.png" alt="">
-                    <a class="fb-icon" href="https://www.facebook.com/judy.montealegremarfil"><img
+                    <a class="fb-icon" href="https://www.facebook.com"><img
                         class="fb-icon"
                         src="images\fb+logo+social+social+media+social+network+icon-1320191784115198611 (1).png"
                         alt=""></a>
@@ -422,9 +433,9 @@
                 <div class="mini-card">
 
                     <h2 class="social-name s-n-t">ra</h2>
-                    <h3 class="social-name-fb">rana</h3>
+                    <h3 class="social-name-fb">ra customer</h3>
                     <img class="social-stars" src="images\image.png" alt="">
-                    <a class="fb-icon" href="https://www.facebook.com/RanaElhity"><img
+                    <a class="fb-icon" href="https://www.facebook.com"><img
                         class="fb-icon"
                         src="images\fb+logo+social+social+media+social+network+icon-1320191784115198611 (1).png"
                         alt=""></a>
@@ -442,9 +453,9 @@
                 <div class="mini-card">
 
                     <h2 class="social-name s-n-t">es</h2>
-                    <h3 class="social-name-fb">esraa</h3>
+                    <h3 class="social-name-fb">es customer</h3>
                     <img class="social-stars" src="images\image.png" alt="">
-                    <a class="fb-icon" href="https://www.facebook.com/asraa.farg"><img
+                    <a class="fb-icon" href="https://www.facebook.com"><img
                         class="fb-icon"
                         src="images\fb+logo+social+social+media+social+network+icon-1320191784115198611 (1).png"
                         alt=""></a>
@@ -488,13 +499,13 @@
             </div>
             <div class="head-intro">
 
-                <h2 class="head-intro-h">hi ,i`m mohamed abd elsalam, founder of royal plus cabinets egypt.
+                <h2 class="head-intro-h">hi ,i`m (the Author Name), founder of (royal plus cabinets) (country).
                 </h2>
                 <p class="head-intro-p">When I Remodeled My First Kitchen It Was A Nightmare.</p>
             </div>
         </div>
 
-        <div class="c-detail">
+        <div class="c-detail" id="c-detail">
 
             <div class="c-detail-s detail-tow">
                 <h2 class="detail-h">sad truth</h3>
@@ -544,76 +555,76 @@
 
             <div class="view-cards" id="view-cards">
 
-                <div class="view">
+                <div class="view" onclick="call(1)">
 
-                    <img class="view-image" src="images\photo-1559554704-0f74b35a8718.jpg" alt="">
-                    <a class="view-link" href="#">
+                    <img class="view-image" src="images\image1.webp" alt="">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
                 </div>
 
-                <div class="view">
+                <div class="view" onclick="call(2)">
                     <img
                         class="view-image"
-                        src="images\photo-1567767326925-e2047bf469d0.jpg"
+                        src="images\image2.webp"
                         alt="">
-                    <a class="view-link" href="#">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
 
                 </div>
 
-                <div class="view">
+                <div class="view" onclick="call(3)">
                     <img
                         class="view-image"
-                        src="images\photo-1599941973480-33ce6bbca25d.jpg"
+                        src="images\image3.webp"
                         alt="">
-                    <a class="view-link" href="#">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
 
                 </div>
 
-                <div class="view">
-                    <img class="view-image" src="images\NatureLover Inspiration1.jpg" alt="">
-                    <a class="view-link" href="#">
+                <div class="view" onclick="call(4)">
+                    <img class="view-image" src="images\image4.webp" alt="">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
 
                 </div>
 
-                <div class="view">
+                <div class="view" onclick="call(5)">
 
                     <img
                         class="view-image"
-                        src="images\kitchen-storage-cabinets-for-your-home.jpg"
+                        src="images\image5.webp"
                         alt="cabinet installed">
-                    <a class="view-link" href="#">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
                 </div>
 
-                <div class="view">
+                <div class="view" onclick="call(6)">
                     <img
                         class="view-image"
-                        src="images\https___blogs-images.forbes.com_houzz_files_2016_11_UpperCabinets.jpg"
+                        src="images\image6.webp"
                         alt="best black kitchen design">
-                    <a class="view-link" href="#">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
 
                 </div>
 
-                <div class="view">
+                <div class="view" onclick="call(7)">
                     <img
                         class="view-image"
-                        src="images\1456612_614889518549804_1409768964_n.jpg"
+                        src="images\image7.webp"
                         alt="beautful Kitchen">
-                    <a class="view-link" href="#">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
 
                 </div>
 
-                <div class="view">
+                <div class="view" onclick="call(8)">
                     <img
                         class="view-image"
-                        src="images\high-park-home-toronto-interior-design-group-img_c701ded70877dbc6_4-6178-1-f9a1bde.jpg"
+                        src="images\image8.webp"
                         alt="">
-                    <a class="view-link" href="#">
+                    <a class="view-link">
                         <span class="view-link-s">view more</span></a>
 
                 </div>
@@ -666,7 +677,7 @@
 
         <div class="map">
 
-            <img class="location" src="images\Untitledghh.png" alt="royal map">
+            <img class="location" src="images\map1.webp" alt="royal map">
 
         </div>
 
@@ -707,7 +718,7 @@
                         <input
                             type="text"
                             id="lastname"
-                            name"lastname"="name"lastname""
+                            name="lastname"
                             required="required">
                         <label class="label" for="lastname">last name</label>
 
@@ -758,7 +769,7 @@
             <div class="logo-tow">
 
                 <h2 class="logoo">
-                    royal
+                    logo
                 </h2>
 
             </div>
@@ -768,13 +779,13 @@
 
                 <ul class="product-list">
                     <li class="product-1">
-                        <a class="product-h green" href="#">cabinets</a>
+                        <a class="product-h green" href="#view-cards">cabinets</a>
                     </li>
                     <li class="product-1">
-                        <a class="product-h light-g" href="#">countertop</a>
+                        <a class="product-h light-g" href="#servic-container">countertop</a>
                     </li>
                     <li class="product-1">
-                        <a class="product-h light-gg" href="#">windows system</a>
+                        <a class="product-h light-gg" href="#servic-container">accessorios</a>
                     </li>
                 </ul>
 
@@ -785,13 +796,13 @@
 
                 <ul>
                     <li class="royal-1">
-                        <a class="royal-h light-gg" href="#">about us</a>
+                        <a class="royal-h light-gg" href="#company">about us</a>
                     </li>
                     <li class="royal-1">
-                        <a class="royal-h light-g" href="#">testmonial</a>
+                        <a class="royal-h light-g" href="#testmonial">testmonial</a>
                     </li>
                     <li class="royal-1">
-                        <a class="royal-h green" href="#">contact us</a>
+                        <a class="royal-h green" href="#contact-boxx">contact us</a>
                     </li>
                 </ul>
 
@@ -799,21 +810,25 @@
 
             <div class="social-contact">
 
-                <a href="https://www.facebook.com/kitchendesino">
+                <a href="https://www.facebook.com">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.youtube.com/channel/UCmVnejk3k2dNyidaeMBeFxQ">
+                <a href="https://www.youtube.com">
                     <i class="fab fa-youtube"></i>
                 </a>
-                <a href="https://www.instagram.com/ramjudd/">
+                <a href="https://www.instagram.com">
                     <i class="fab fa-instagram"></i>
                 </a>
 
             </div>
-
         </div>
+        <div class="copywrite">
+            <h5>Interior © 2013.  <a href="">Privacy Policy.</a></h5>
+           </div>
 
     </footer>
+
+</main>
 
     <script src="index.js" charset="utf-8"></script>
 </body>
