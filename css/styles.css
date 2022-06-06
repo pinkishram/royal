@@ -49,12 +49,14 @@ nav {
 
 nav ul {
     float: right;
+    align-items: baseline;
+    display: flex;
  
 }
 
 nav ul li {
     display: inline-block;
-    margin: 1.8rem 0 1rem;
+    margin: 2.5rem 0 1rem;
     vertical-align: middle;
     height: 60px;
 
@@ -62,7 +64,7 @@ nav ul li {
 
 .nav-link{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     border-radius: 5px;
     margin: 0 1.8rem;
@@ -70,10 +72,16 @@ nav ul li {
 
 footer {
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 span {
     text-transform: lowercase;
+}
+
+a{
+  text-decoration: none;
 }
 
 a:hover {
@@ -189,14 +197,14 @@ a.ctive {
    .activee::before{
     content: "";
     position: absolute;
-    left: 10px;
-    bottom: 5px;
+    left: 0;
+    top: 20px;
     height: 2px;
-    width: 80%;
-    background-color: #64c7c2; 
-    transform-origin:left center; 
+    width: 100%;
+    background-color: #64c7c2;
+    transform-origin: left center;
     transform: scaleX(0);
-    transition: 500ms ease-out; 
+    transition: 500ms ease-out;
     outline: none;
     border: none;
 }  
@@ -210,7 +218,7 @@ a.ctive {
 
 .top-head {
     width: 100%;
-    height: 875px;
+    height: 100vh;
     background-image: url("../images/background.webp");
     background-color: gray;
     background-size: cover;
@@ -220,7 +228,7 @@ a.ctive {
     font-size: 40px;
     line-height: 80px;
     float: right;
-    margin: 0 20px;
+    margin:20px;
     cursor: pointer;
     display: none;
 }
@@ -350,7 +358,7 @@ a.ctive {
 }
 
 .neo-button {
-    padding: 10px;
+    padding: 5px;
     position: relative;
     background: rgba(0, 0, 0, 0.5);
     transition: background 1s;
@@ -369,7 +377,7 @@ a.ctive {
     content: "";
     position: absolute;
     width: 25px;
-    height: 400%;
+    height: 500%;
     background: var(--crl);
     transition: 2s ease;
     animation: animation 2s linear infinite;
@@ -380,7 +388,7 @@ a.ctive {
 }
 
 .neo-button-box {
-    margin: 40px;
+    margin: 25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -401,8 +409,8 @@ a.ctive {
     position: absolute;
     background: #0d122e;
     width: 94%;
-    height: 89%;
-    top: 3px;
+    height: 88%;
+    top: 2px;
     left: 5px;
 }
 
@@ -413,7 +421,9 @@ a.ctive {
     opacity: 0.5;
     color: #DCDCDC;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 15px;
+    padding: 5px;
+
 }
 
 .neo-s:hover {
@@ -937,12 +947,13 @@ textarea:not(:focus):valid~.label {
     font-size: 20px;
     text-transform: capitalize;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .google-pp {
     font-size: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 8px;
 }
 
 .goolge-star {
@@ -965,8 +976,8 @@ textarea:not(:focus):valid~.label {
 }
 
 .social-name {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 65px;
     border-radius: 50%;
     background: #EE9A00;
     float: left;
@@ -998,6 +1009,8 @@ textarea:not(:focus):valid~.label {
 .social-stars {
     width: 120px;
     height: 25px;
+    display: block;
+    margin: 2rem .5rem;
 }
 
 .fb-icon {
@@ -1419,6 +1432,7 @@ textarea:not(:focus):valid~.label {
 .c-button {
     border: none;
     background: #fff;
+    margin: 0 auto;
 }
 
 .contact-tow .contact-box {
@@ -1495,7 +1509,7 @@ footer .logoo {
     padding: 1rem;
     border-radius: 50%;
     color: #fff;
-    border: 5px solid #D6A419;
+    border: 3.5px solid #D6A419;
     margin: 5px;
 }
 
@@ -1552,6 +1566,10 @@ footer .logoo {
     opacity: 1;
     top: 35px;
     visibility: visible;
+    
+}
+.trans-service{
+    transition-delay:400ms ;
 }
 
 /* light box */
@@ -1735,12 +1753,12 @@ footer .logoo {
  
     nav ul li {
         display: inline-block;
-        margin: 2rem 0 1rem;
+        margin: 2.8rem 0 1rem;
     }
 
     .nav-link{
         color: white;
-        font-size: 18px;
+        font-size: 20px;
         text-transform: uppercase;
         border-radius: 5px;
         margin: 0 1.1rem;
@@ -1749,7 +1767,7 @@ footer .logoo {
     .tele {
         margin-left: 100px;
         border-width: 0;
-        font-size: 1.4rem;
+        /* font-size: 1.4rem; */
     }
      .accessorios,
      .cabinets,
@@ -1764,10 +1782,20 @@ footer .logoo {
 }
 }
 
+@media only screen and (max-width: 1500px) {
+
+    .tittle-box,.promp-pic{
+      width:100%;
+    }
+    .main-tittle{
+        width: 50%;
+    }
+} 
+
 @media only screen and (max-width: 1455px) {
 
     .tele{
-       margin-left: 0px;
+       margin-left: 100px;
     }
 
 } 
@@ -1783,7 +1811,15 @@ footer .logoo {
         color: white;
         font-size: 18px;
         text-transform: uppercase;
-        margin: 0 0.6rem;
+        margin: .5rem 0.9rem;
+    }
+
+    .tele{
+        margin-left: 100px;
+     }
+
+     .main-tittle{
+        width: 60%;
     }
 
     .accessorios,
@@ -1804,13 +1840,19 @@ footer .logoo {
 
 @media only screen and (max-width: 1246px) {
 
-
+    
     .nav-link{
         color: white;
-        font-size: 16px;
+        font-size: 19px;
         text-transform: uppercase;
-        margin: 0 0.4rem;
+        margin: .5rem 0.7rem;
     }
+
+    .tele{
+        margin-left: 70px;
+     }
+
+   
     
     .accessorios,
     .cabinets,
@@ -1896,6 +1938,7 @@ footer .logoo {
         text-align: center;
         transition: all 0.8s;
         z-index: 2;
+        display: block;
     }
 
     nav ul li {
@@ -2150,9 +2193,10 @@ footer .logoo {
         display: block;
         position: absolute;
         z-index: 4;
-        left: 300px;
+        right:1px;
         top: 20px;
         color: #DCDCDC;
+        margin-top: 0;
     }
     #checkbtn:hover{
         color: #83d3cf;
@@ -2230,7 +2274,7 @@ footer .logoo {
 
     .promp-pic {
         height: 350px;
-        width: 350px;
+        width: 100%;
     }
 
     .promo h2 {
@@ -2256,7 +2300,7 @@ footer .logoo {
 
     .contact-adress h3 {
         font-size: 3rem;
-        width: 350px;
+        width: 100%;
     }
 
     .contact-first {
@@ -2265,12 +2309,12 @@ footer .logoo {
     }
 
     .contact-first form {
-        padding-left: 16px;
+        padding: 16px;
     }
 
    
     .neo-button-box {
-        width: 250px;
+        width: 100%;
     }
 
     .reviews {
@@ -2295,6 +2339,10 @@ footer .logoo {
         margin-top: 0;
         width: var(--div-width);
         padding: 0;
+    }
+
+    .contact-alt form{
+        padding: 16px;
     }
 
     .contact-img {
@@ -2378,7 +2426,7 @@ footer .logoo {
 
     .contact-alt .contact-box {
         position: static;
-        width: 450px;
+        width: var(--div-width);
         height: auto;
         background-color: #fff;
         display: block;
@@ -2394,7 +2442,7 @@ footer .logoo {
     input,
     textarea {
         border: 1px solid black;
-        max-width: 325px;
+        max-width: 100%;
         border-radius: 5px;
     }
 
@@ -2438,7 +2486,6 @@ footer .logoo {
     .contact-alt {
         display: flex;
         flex-wrap: wrap;
-        padding: 1rem;
         gap: 2rem;
         margin: 0;
     }
@@ -2451,5 +2498,3 @@ footer .logoo {
     }
 
 }
-
-
