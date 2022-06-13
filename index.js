@@ -1,15 +1,11 @@
-// varibiles
+// variables
 
+let headTop= document.querySelector(".top-head");
 let scroolBtn= document.querySelector(".scroll-top");
 let activeeLink = document.querySelector(".activee");
 let servicebox = document.querySelector(".service-box")
 let viewLink=document.querySelectorAll(".view-link");
 let leftArrow=document.querySelectorAll(".left-arrow");
-
-
-
-
-
 
 // bars click
 let barClick=document.querySelector(".fa-bars");
@@ -17,20 +13,18 @@ let barClick=document.querySelector(".fa-bars");
     barClick.addEventListener("click" ,()=>{
 
     document.querySelector(".hide").classList.toggle("hide-elm");
-
 })
 // bars click
-
-
-    
   function mouseOverActive(){
+    servicebox.classList.remove("trans-service");
         servicebox.classList.add("op-service");
 
     }
 
    function mouseOutActive(){
-       
-        servicebox.classList.remove("op-service");         
+        servicebox.classList.add("trans-service");
+        servicebox.classList.remove("op-service");      
+
     }
 
 // scroll borttom
@@ -46,12 +40,10 @@ window.onscroll = function () {
 }
 scroolBtn.addEventListener("click", () => {
 
+    headTop.scrollIntoView({behavior: "smooth", block: "start"});
+
 })
-
-  // scroll borttom
-
-
-
+  // scroll bottom//
 
 // second box //
 
@@ -81,9 +73,7 @@ stest.style.transform="translatex("+ currentScrollPosition + "px)";
 // sCont.style.left =  currentScrollPosition +"px";
 
      }
-
  // second box //
-
      let currentScrollPositionn = 0;
 
      const viewWidth = document.querySelector(".view").offsetWidth;
@@ -110,7 +100,6 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
 //  lightbox start elements///
 
      function call(n) {
-
         document.addEventListener("keydown", move);
 
         document.documentElement.style.overflow= "hidden";
@@ -143,12 +132,9 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
            .add("sliding-section");
        slidingHold.appendChild(closeelment);
        slidingHold.appendChild(secondElment);
-
        let mainDiv = document.querySelector(".main");
-
        mainDiv.insertBefore(slidingHold, mainDiv.childNodes[0]);
        mainDiv.insertBefore(newElment, mainDiv.childNodes[0]);
-
       
     //    box light element///
     let leftArrow = document.createElement("div");
@@ -209,8 +195,6 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
         .classList
         .add("slidingimag");
     secondElment.appendChild(slider_content);
-
-
         // image
         let h = window.innerHeight;
         let images = document.createElement("img");
@@ -222,12 +206,9 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
         images.style.maxHeight = h - 100 + "px";
     
         // image
-
         function prev(){
-
             if (n <= 1) {
-                n = 8;
-                
+                n = 8;    
                 secondElment.removeChild(slider_content);
                 secondElment.appendChild(slider_content);
                  n++;
@@ -239,9 +220,7 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
     
             secondElment.appendChild(slider_content);
             images.src = "images/image" + [n] + ".webp";
-    
         }
-
         //prev 
 
         // forward
@@ -261,31 +240,23 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
     
             secondElment.appendChild(slider_content);
             images.src = "images/image" + [n] + ".webp";
-    
         }
         // forward
- 
          // adress div and number scroll amount//
          let scrollBox = document.querySelector(".sliding-section-hold");
          scrollBox.style.top = scrollY + "px";
-         //scroll amount//
          
+         //scroll amount//
       images.onclick = () => {
-
         forward();
      }
-
     rightArrow.onclick = function () {
        forward()
     };
-
-    
     leftArrow.onclick = function () {
         prev();
     };
-   
     // keyboard move//
-
     function move(event) {
         if (event.key == "ArrowRight") {
             forward();
@@ -299,10 +270,7 @@ sCont.style.transform="translatex("+ currentScrollPositionn + "px)";
             closeElement();
         }
     }
-   
-
     }
-
     function closeElement() {
 
         let mainDiv = document.querySelector("main");
