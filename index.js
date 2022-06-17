@@ -79,7 +79,7 @@ stest.style.transform="translatex("+ currentScrollPosition + "px)";
      const viewWidth = document.querySelector(".view").offsetWidth;
      const sCont=document.querySelector(".view-cards");
 
-     let scrollAmountt = ((7.5 * viewWidth)- bodyWidth)/6.5;
+     let scrollAmountt = ((7.4 * viewWidth)- bodyWidth)/6.5;
      let maxScroll= (8.3 * -viewWidth)+ bodyWidth;
 
 function myfunction(val){
