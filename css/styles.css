@@ -916,7 +916,7 @@ textarea:not(:focus):valid~.label {
 }
 
 .testmonial-sub {
-    max-height: 275px;
+    min-height: 295px;
     width: 150%;
     display: flex;
     margin-top: 3.5rem;
