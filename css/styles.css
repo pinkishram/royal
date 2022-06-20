@@ -896,7 +896,7 @@ textarea:not(:focus):valid ~ .label {
 }
 
 .social-name-fbbb {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: "montserrat";
     color: #182847;
 }
