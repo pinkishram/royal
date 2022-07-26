@@ -5,6 +5,7 @@
     --heavy-secondary-clr: #d6a419;
     --div-width: 100%;
     --div-padding-left: 1rem;
+    --intro-link-c: #1d975e;
 }
 
 html {
@@ -231,7 +232,7 @@ a.ctive {
 
 .logo {
     color: #dcdcdc;
-    font-size: 55px;
+    font-size: 65px;
     padding: 0 0 0 20px;
     margin: 1rem 0 0 6rem;
     line-height: 80px;
@@ -358,6 +359,7 @@ a.ctive {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .neo-button:hover {
@@ -480,7 +482,7 @@ a.ctive {
 
 .intro-link {
     font-size: 1.2rem;
-    color: var(--secondary-clr);
+    color: var(--intro-link-c);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     font-weight: lighter;
@@ -497,7 +499,8 @@ a.ctive {
 }
 
 .intro-link:hover {
-    color: var(--heavy-secondary-clr);
+    text-shadow: none;
+    color: var(--intro-link-c);
 }
 
 .intro-item div {
@@ -516,7 +519,7 @@ a.ctive {
 .promo h2 {
     height: 120px;
     margin: 0;
-    color: green;
+    color: var(--intro-link-c);
     font-size: 35px;
     position: absolute;
     background-color: white;
@@ -896,13 +899,13 @@ textarea:not(:focus):valid ~ .label {
 }
 
 .social-name-fbbb {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: "montserrat";
     color: #182847;
 }
 
 .testmonial-sub {
-    min-height: 295px;
+    max-height: 275px;
     width: 150%;
     display: flex;
     margin-top: 3.5rem;
@@ -1441,11 +1444,9 @@ textarea:not(:focus):valid ~ .label {
     padding: 1rem;
 }
 
-.c-button {
-    border: none;
-    background: #fff;
+/* .c-button {
     margin: 0 auto;
-}
+} */
 
 .contact-tow .contact-box {
     position: absolute;
@@ -2077,7 +2078,7 @@ footer .logoo {
     nav ul {
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         text-align: center;
         top: 90px;
         left: -200%;
@@ -2304,7 +2305,7 @@ footer .logoo {
     }
 
     .card {
-        min-width: 302px;
+        min-width: 300px;
         max-height: 310px;
     }
 
