@@ -4,6 +4,8 @@ let headTop = document.querySelector(".top-head");
 let scroolBtn = document.querySelector(".scroll-top");
 let activeeLink = document.querySelector(".activee");
 let servicebox = document.querySelector(".service-box");
+let serviceBoxS = document.querySelector(".service-box-s");
+
 let viewLink = document.querySelectorAll(".view-link");
 let leftArrow = document.querySelectorAll(".left-arrow");
 
@@ -12,6 +14,7 @@ let barClick = document.querySelector(".fa-bars");
 
 barClick.addEventListener("click", () => {
     document.querySelector(".hide").classList.toggle("hide-elm");
+    document.querySelector(".list-m").classList.toggle("show-list");
 });
 // bars click
 
@@ -48,8 +51,8 @@ const bodyWidth = document.body.offsetWidth;
 const cardWidth = document.querySelector(".card ").offsetWidth;
 const stest = document.querySelector(".testmonial-sub");
 
-let scrollAmount = (6.55 * cardWidth - bodyWidth) / 5;
-let maxScrolltest = 6.55 * -cardWidth + bodyWidth;
+let scrollAmount = (6.56 * cardWidth - bodyWidth) / 5;
+let maxScrolltest = 6.56 * -cardWidth + bodyWidth;
 
 function myfunctiontest(v) {
     currentScrollPosition += v * scrollAmount;
@@ -250,3 +253,5 @@ function closeElement() {
     mainDiv.removeChild(mainDiv.childNodes[0]);
     document.documentElement.style.overflow = "visible";
 }
+
+// service page java////
